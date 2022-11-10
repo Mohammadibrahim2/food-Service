@@ -15,15 +15,9 @@ const Home=()=>{
 
     return(
         <div >
-       
-        <div className="w-full carousel rounded-box  headerback " >
-          <div className="home">
+  <div className="bg-black  headerback " >
 
-          </div>
-
-   
-          </div>
- 
+</div>
 
 <div>
 {

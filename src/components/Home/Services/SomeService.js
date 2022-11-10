@@ -9,7 +9,7 @@ const SomeServices=()=>{
   const [someservices,setAllservices]=useState([])
  
   useEffect(()=>{
-    fetch("http://localhost:5000/fewservice")
+    fetch("https://server-pearl-chi.vercel.app/fewservice")
     .then(res=>res.json())
     .then(data=>setAllservices(data))
 

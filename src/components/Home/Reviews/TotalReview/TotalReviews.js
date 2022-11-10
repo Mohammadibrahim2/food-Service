@@ -9,7 +9,7 @@ const TotalReviews=()=>{
   const[reviews,setreviews]=useState([])
   useEffect(()=>{
 
-    fetch("http://localhost:5000/allreviews")
+    fetch("https://server-pearl-chi.vercel.app/allreviews")
     .then(res=>res.json())
     .then(data=>{
       setreviews(data)
@@ -19,7 +19,7 @@ const TotalReviews=()=>{
 
 return(
     <div>
-   <h1 className="text-primary font-bold text-3xl my-3">All reviews of this Service</h1>
+   <h1 className="text-primary font-bold text-3xl my-3">Reviews</h1>
       
   {
 reviews.map(review=><Showreview

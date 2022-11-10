@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 
 import { Form } from "react-router-dom";
 import { AuthContext } from "../../../AuthContext/AuthProvider";
+import useTitle from "../../../Hooks/TittleHooks/useTitle";
 
 const Addservice=()=>{
 
@@ -44,6 +45,7 @@ const handleAddservice=event=>{
     .then(data=>console.log(data))
 
 }
+useTitle("Addservice")
 
     return(
         <div className="w-full">

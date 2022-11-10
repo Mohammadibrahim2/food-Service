@@ -6,6 +6,7 @@ const{description,name,email}=review
 
     return(
         <div>
+          
     <div className="card w-96 bg-primary text-primary-content mb-5">
      <div className="card-body">
     <h2 className="card-title">{name}</h2>
@@ -17,7 +18,9 @@ const{description,name,email}=review
     <div className="card-actions justify-end">
       <button className="btn">{price}</button>
     </div>
-  </div> 
+    <div>
+    </div>
+    </div> 
   </div>
        
         </div>

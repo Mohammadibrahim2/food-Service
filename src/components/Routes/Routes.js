@@ -37,12 +37,12 @@ export const routes=createBrowserRouter([
         {
             path:"/services/:id",
             element:<Singleservice></Singleservice>,
-             loader:({params})=>fetch(`http://localhost:5000/services/${params.id}`)
+             loader:({params})=>fetch(`https://server-pearl-chi.vercel.app/services/${params.id}`)
             
         },
         {
             path:"/myreviews",
-            element: <UserReviews></UserReviews>
+            element: <PrivateRoute><UserReviews></UserReviews></PrivateRoute> 
             
             
         },
@@ -60,7 +60,7 @@ export const routes=createBrowserRouter([
         },
         {
             path:"/blog",
-            element:<PrivateRoute><Blog></Blog></PrivateRoute>
+            element:<Blog></Blog>
         }
     ]
 }

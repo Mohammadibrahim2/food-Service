@@ -4,11 +4,11 @@ import React, { useEffect } from "react";
 const useTitle=title=>{
 
 
-    // useEffect(()=>{
-    //     document.title=`${title}-Protpolio`
+    useEffect(()=>{
+        document.title=`${title}-Photobuzz`
     
     
-    // },
-    // [title])
+    },
+    [title])
 }
 export default useTitle

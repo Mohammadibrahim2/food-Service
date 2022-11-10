@@ -14,7 +14,7 @@ const Allservicecard=({allservices})=>{
   <figure><img src={img} alt="car!"/></figure>
   <div className="card-body">
     <h2 className="card-title">{name}</h2>
-    <h3>price :$ {price} </h3>
+    <h3>price : {price} </h3>
     <p>
         {description.slice(0,100)+'.....'}<Link to="">Read more</Link>
     </p>

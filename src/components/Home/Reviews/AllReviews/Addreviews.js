@@ -1,8 +1,11 @@
 import React, { useContext } from "react";
 import { Form } from "react-router-dom";
 import { AuthContext } from "../../../AuthContext/AuthProvider";
+import useTitle from "../../../Hooks/TittleHooks/useTitle";
 
 const AddReviews=()=>{
+   
+   
     const {user}=useContext(AuthContext)
     
 
@@ -23,7 +26,7 @@ const handleAddReviews=event=>{
     form.reset()
 
 
-    fetch('http://localhost:5000/singlereviews',{
+    fetch('https://server-pearl-chi.vercel.app/singlereviews',{
         method:"POST",
         headers:{
             "Content-Type":"application/json",
