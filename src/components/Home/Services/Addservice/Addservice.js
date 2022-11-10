@@ -54,7 +54,7 @@ const handleAddservice=event=>{
             <h1 className="text-white my-3">Enter Service name</h1>
         <input type="name" placeholder="Type here"name="namee" className="input input-bordered input-primary w-full max-w-xs" /><br/>
             </div>
-{/*        
+       
         <div>
         <h1 className="text-white my-3">Enter Service email</h1>
        <input type="email"defaultValue={user?.email} placeholder="email"name="email"readOnly className="input input-bordered input-primary w-full max-w-xs" /><br/>
@@ -70,7 +70,7 @@ const handleAddservice=event=>{
         <h1 className="text-white my-3">Enter Service photoUrl</h1>
         <input type="text-" placeholder="photoUrl" name="photoUrl"className="input input-bordered input-primary w-full max-w-xs" /><br/>
           
-        </div> */}
+        </div>
       
         <div>
         <h1 className="text-white my-3">Enter Service price</h1>
