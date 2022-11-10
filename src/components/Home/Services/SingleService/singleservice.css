@@ -1,0 +1,44 @@
+.modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    overflow: hidden;
+    z-index: 999;
+    transition: opacity .4s ease,visibility .4s ease, transform .5s ease-in-out;
+}
+.modal.open{
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+
+}
+.modal>img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    line-height: 0;
+    box-sizing: border-box;
+    padding: 20px 0 20px;
+    margin: 0 auto;
+}
+.icons{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 2rem;
+    height: 2rem;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, .4);
+    color: #ffffff;
+
+}
