@@ -22,13 +22,13 @@ const UserReviews=()=>{
     return(
         <div>
             
-            {
+            {/* {
             usersreviews.map(review =><Showreview 
           key={usersreviews._id}
           review={review}
           
           ></Showreview>)
-       }   
+       }    */}
       
 
 
