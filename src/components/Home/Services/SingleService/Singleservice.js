@@ -61,7 +61,7 @@ const handleModal=(img)=>{
   
     <TotalReviews></TotalReviews>
     </div>
-{/* <div className=" border border-5 rounded p-10 h-1/2 my-10 lg:my-3 w-full ">
+<div className=" border border-5 rounded p-10 h-1/2 my-10 lg:my-3 w-full ">
 <h1 className="text-primary font-bold text-3xl pb-3">Add your own review</h1>
  {user?.email? 
 <AddReviews></AddReviews> :
@@ -70,7 +70,7 @@ const handleModal=(img)=>{
 <Link to="/login"><button className="btn btn-primary">Log in</button></Link>
 </>
  } 
-</div> */}
+</div>
 
 
 
