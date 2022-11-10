@@ -22,7 +22,7 @@ const handleUpdate=()=>{
 
     return(
         <div className="my-3 ">
- <div className="card w-96 bg-primary text-white shadow-xl">
+ {/* <div className="card w-96 bg-primary text-white shadow-xl">
   <div className="card-body">
     <h2 className="card-title">{name}</h2>
     <p>{email}</p>
@@ -30,7 +30,7 @@ const handleUpdate=()=>{
     <div className="card-actions justify-end">
    
     </div>
-  </div>
+  </div> */}
 </div>
 
         </div>
