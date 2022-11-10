@@ -6,7 +6,7 @@ const Footer=()=>{
 
 return(
     <div className="lg:px-20 bg-black">
-    {/* <footer className=" lg:px-20 px-10 lg:py-5 py-12 bg-black flex justify-between lg:flex-row flex-col mt-6">
+    <footer className=" lg:px-20 px-10 lg:py-5 py-12 bg-black flex justify-between lg:flex-row flex-col mt-6">
   <div className="text-start">
   
    <p className="text-white text-3xl p-2 ">Wix Creative</p>
@@ -23,7 +23,7 @@ return(
     </div>
     <p className="text-white mt-3">Phone : 01978665470</p>
   </div>
-</footer> */}
+</footer>
         
     </div>
 )
