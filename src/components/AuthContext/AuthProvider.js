@@ -1,5 +1,5 @@
 
-import React, { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react-router-dom";
 import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut,  } from "firebase/auth";
 import app from "../firebase/firebase.config";
 
@@ -13,8 +13,8 @@ const auth = getAuth(app);
 const AuthProvider=({children})=>{
     
 
-    // const[user,setuser]=useState(null)
-    // const [loading,setLoading]=useState(true)
+    const[user,setuser]=useState(null)
+    const [loading,setLoading]=useState(true)
 
 const Providerlogin=(provider)=>{
     setLoading(true)
