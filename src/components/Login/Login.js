@@ -49,7 +49,7 @@ const handlelogin=event=>{
 
     return(
         <div className="flex justify-center">
-    {/* <Form onSubmit={handlelogin} className="h-auto p-10  rounded border  my-30  text-center loginback ">
+    <Form onSubmit={handlelogin} className="h-auto p-10  rounded border  my-30  text-center loginback ">
       <h1 className="font-bold text-4xl text-primary text-center my-4">Log in </h1>
       <h1 className="my-4 text-start">Enter your password</h1>
       <input type="email" placeholder="enter your email"name="email" className="input input-bordered input-primsry w-full max-w-xs" /><br/>
@@ -58,7 +58,7 @@ const handlelogin=event=>{
       <button type="submit"className="btn btn-primary my-3">log in</button>
       <h1 className="text-dark my-3">Create a new account? <Link className="text-primary" to="/register">Register</Link></h1>
       <button onClick={handleGooglelogin} type="submit"className="btn btn-primary">Google Sign in</button>
-    </Form> */}
+    </Form>
         </div>
 
     )
