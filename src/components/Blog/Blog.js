@@ -35,7 +35,7 @@ The signature ensures that the token hasn’t been altered. The party that creat
     
 
 </div>
-{/* <div  className="my-7">
+<div  className="my-7">
     <h1 className="font-bold text-2xl my-6">3.What is the difference between javascript and NodeJS?</h1>
     
     <p>The four critical differences between javascript vs NoSQL are:</p>
@@ -50,7 +50,7 @@ The signature ensures that the token hasn’t been altered. The party that creat
     V8 is the Javascript engine inside of node.js that parses and runs Javascript.
         </li>
 
-</div> */}
+</div>
 
 <div className="my-7">
     <h1 className="font-bold font-size text-2xl my-6">3.How does NodeJS handle multiple requests at the same time?</h1>
