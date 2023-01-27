@@ -1,0 +1,86 @@
+[
+    {
+      "id":1,
+      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh4kNI3IhYL_QvfbqJwTCdI2e4P2ie2lAABw&usqp=CAU",
+      "name":"Fried Rice",
+      "text":"Facilisi imperdiet ex quis dignissim pharetra id aptent erat nibh",
+      "price":200
+    },
+    {
+     "id":2,
+      "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0A8j_KoN76zPcmCWtrsMHEn080uRhPaAq8Q&usqp=CAU",
+      "name":"Burger",
+      "text":"Facilisi imperdiet ex quis dignissim pharetra id aptent erat nibh",
+      "price":105
+    },
+    {
+      "id":8,
+      "img":"https://i.ibb.co/CW82RQP/nachos.jpg", 
+       "name":"Nachos",
+       "text":"Facilisi imperdiet ex quis dignissim pharetra id aptent erat nibh",
+      "price":100
+    },
+    {
+      "id":3,
+      "img":"https://i.ibb.co/C6nh2YP/food-5.jpg",
+      "name":"Fried Rice",
+      "text":"Facilisi imperdiet ex quis dignissim pharetra id aptent erat nibh",
+      "price":200
+    },
+    {
+      "id":4,
+      "img":"https://i.ibb.co/Jj9NBGM/food-4.jpg",
+      "name":"Fried Rice",
+      "text":"Facilisi imperdiet ex quis dignissim pharetra id aptent erat nibh",
+      "price":70
+    },
+    {
+      "id":5,
+      "img":"https://i.ibb.co/kQthvL0/food-3.jpg",
+      "name":"Fried Rice",
+      "text":"Facilisi imperdiet ex quis dignissim pharetra id aptent erat nibh",
+      "price":80
+    },
+    {
+      "id":6,
+      "img":"https://i.ibb.co/Y2g4v7Z/food-2.jpg",
+      "name":"Fried Rice",
+      "text":"Facilisi imperdiet ex quis dignissim pharetra id aptent erat nibh",
+      "price":100
+    },
+    {
+      "id":8,
+      "img":"https://i.ibb.co/CW82RQP/nachos.jpg", 
+       "name":"Nachos",
+       "text":"Facilisi imperdiet ex quis dignissim pharetra id aptent erat nibh",
+      "price":100
+    },
+    {
+      "id":7,
+      "img":"https://i.ibb.co/qNzVWPQ/food-1-2.jpg", 
+       "name":"Fried Rice",
+       "text":"Facilisi imperdiet ex quis dignissim pharetra id aptent erat nibh",
+      "price":250
+    } 
+    ,{
+      "id":8,
+      "img":"https://i.ibb.co/CW82RQP/nachos.jpg", 
+       "name":"Nachos",
+       "text":"Facilisi imperdiet ex quis dignissim pharetra id aptent erat nibh",
+      "price":100
+    },
+    {
+      "id":2,
+       "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0A8j_KoN76zPcmCWtrsMHEn080uRhPaAq8Q&usqp=CAU",
+       "name":"Burger",
+       "text":"Facilisi imperdiet ex quis dignissim pharetra id aptent erat nibh",
+       "price":105
+     },
+    {
+      "id":8,
+      "img":"https://i.ibb.co/CW82RQP/nachos.jpg", 
+       "name":"Nachos",
+       "text":"Facilisi imperdiet ex quis dignissim pharetra id aptent erat nibh",
+      "price":100
+    }
+  ]

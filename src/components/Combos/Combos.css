@@ -1,0 +1,29 @@
+.comboBack{
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+
+}
+.box{
+overflow: hidden;
+
+
+}
+
+.overlayText{
+    transform: translateY(65%);
+    transition-duration:  1s ;
+   
+    
+}
+.box:hover>.overlayText{
+    transform: translateY(20%);
+}
+.comboOverlay{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.6));
+
+  
+   
+}

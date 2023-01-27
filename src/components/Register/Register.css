@@ -1,0 +1,12 @@
+.loginimg{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('https://i.ibb.co/DQdDwt5/loginimg-5.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%; 
+   
+    
+}
+.loginbox{
+    backdrop-filter: blur(9px);
+}
+

@@ -37,12 +37,12 @@ export const routes=createBrowserRouter([
         {
             path:"/services/:id",
             element:<Singleservice></Singleservice>,
-             loader:({params})=>fetch(`https://server-pearl-chi.vercel.app/services/${params.id}`)
+             loader:({params})=>fetch(`https://food-service-server-rust.vercel.app/services/${params.id}`)
             
         },
         {
             path:"/myreviews",
-            element: <PrivateRoute><UserReviews></UserReviews></PrivateRoute> 
+            element: <UserReviews></UserReviews> //</PrivateRoute> <PrivateRoute></PrivateRoute>
             
             
         },

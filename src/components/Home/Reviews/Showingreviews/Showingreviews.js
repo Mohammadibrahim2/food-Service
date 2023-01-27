@@ -1,34 +1,50 @@
 import React from "react";
+import { toast } from "react-hot-toast";
+
+import {MdDeleteForever} from "react-icons/md"
 
 const Showreview=({review})=>{
 
-const {name,email,description,_id,img}=review;
+
+  // userse review:--
+const {name,email,description,_id,img ,price}=review;
 
 const handleDelete =_id=>{
   const agree=window.confirm(`Are you sure to delete ${name} s review ?`)
   if(agree){
-    fetch(`https://server-pearl-chi.vercel.app/deletereview/${_id}`,{
+    fetch(`https://food-service-server-rust.vercel.app/deletereview/${_id}`,{
       method:"DELETE"
      })
      .then(res=>res.json(res))
      .then(data=>{
+      if(data.acacknowledged){
+
+      toast.success("successfully deleted your data")
+      }
       console.log(data)
       
      })
   } 
 }
     return(
-        <div className="my-3 ">
- <div className="card w-96 bg-primary text-white shadow-xl">
-  <img src={img}/>
-  <div className="card-body">
-    <h2 className="card-title">{name}</h2>
-    <p>{email}</p>
-    <p>{description}</p>
-   
-    <button className="btn btn-white" onClick={()=>handleDelete(_id)}>Delete</button>
-    <div className="card-actions justify-end">
+        <div className="my-3 h-auto w-[98%] mx-auto  ">
+       
 
+
+ <div className=" px-5 h-[350px] flex flex-col justify-center items-start text-[16px] w-auto bg-black  text-white shadow-xl rounded-lg">
+  <img src={img} className="w-[200px] h-[150px] rounded-lg"/>
+  <div className="flex flex-row justify-between  items-start w-full p-3">
+    <div className="leading-8">
+
+  
+    <h2 className="">Product Name: {name}</h2>
+    <p>Product Price : <span style={{color:"yellow"}}>{price} Tk</span></p>
+    <p>Email : {email}</p>
+    <p>Review : {description}</p>
+    </div>
+    <div className="">
+    <button className="text-3xl" style={{color:"red"}} onClick={()=>handleDelete(_id)}>
+      <MdDeleteForever/></button>
    
     </div>
   </div>

@@ -1,0 +1,8 @@
+
+
+.icon{
+    transition-duration: .5s ;
+}
+.icon:hover{
+    color:black
+}

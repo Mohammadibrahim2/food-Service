@@ -6,6 +6,7 @@ import useTitle from "../Hooks/TittleHooks/useTitle";
 import "./login.css"
 import { AuthContext } from "../AuthContext/AuthProvider";
 
+import {MdArrowForwardIos} from "react-icons/md"
 
 
 const Login=()=>{
@@ -49,17 +50,36 @@ const handlelogin=event=>{
 }
 
     return(
-        <div className="flex justify-center w-full">
-    <Form onSubmit={handlelogin} className="lg:px-20  w-full lg:w-auto h-auto p-10  rounded border  my-30  text-center bg-primary ">
+      
+        <div className="w-full h-auto  bg-white">
+          <div className="w-full lg:h-[45vh] h-[80vh] loginheader">
+       <div className="flex flex-col items-center  justify-center h-full w-full   font-serif">
+        <h2 className="text-6xl text-black font-bold">Log in</h2>
+        <h2 className="my-3 flex flex-row  items-center text-xl text-black">Home
+         <span className="mx-3" style={{color:"red"}}><MdArrowForwardIos/></span>Log in</h2>
+       </div>
+
+    </div>
+         
+          <div className="loginimg  flex flex-row items-center justify-center w-full h-[100vh] p-5">
+
+{/*          
+          <div className="h-full w-full">
+
+          </div> */}
+
+    <Form onSubmit={handlelogin} className="lg:px-20  w-full lg:w-auto h-auto p-10  rounded border   text-center loginbox ">
       <h1 className="font-bold text-4xl text-white text-center my-4">Log in </h1>
       <h1 className="my-4 text-start text-white">Enter your password</h1>
-      <input type="email" placeholder="enter your email"name="email" className="input input-bordered input-primsry w-full max-w-xs" /><br/>
+      <input type="email" placeholder="enter your email"name="email" className="input input-bordered input-white w-full max-w-xs" /><br/>
       <h1 className="my-4 text-start text-white">Enter your password</h1>
       <input type="password" placeholder="enter your password"name="password" className="input input-bordered input-white w-full max-w-xs" /><br/>
-      <button type="submit"className="btn btn-white my-3">log in</button>
-      <h1 className="text-white my-3">Create a new account? <Link className="text-black" to="/register">Register</Link></h1>
-      <button onClick={handleGooglelogin} type="submit"className="btn btn-white">Google Sign in</button>
+      <button type="submit"className="py-2 px-6 rounded-lg my-3" style={{backgroundColor:"black",color:"white"}}>log in</button>
+      <h1 className="text-white my-3 text-xl">Create a new account? <Link className=" font-semibold" to="/register" style={{color:"black"}}>Register</Link></h1>
+      <button onClick={handleGooglelogin} type="submit"className="py-3 px-4 rounded-lg " style={{backgroundColor:"black",color:"white"}}>Google Sign in</button>
     </Form>
+  
+        </div>
         </div>
 
     )

@@ -1,4 +1,21 @@
-.loginback{
-    background-image:  url('https://th.bing.com/th/id/OIP.siTKWEj0s7oqC3-4e941cAHaE7?pid=ImgDet&w=626&h=417&rs=1') 
+.loginimg{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('https://i.ibb.co/DQdDwt5/loginimg-5.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%; 
+   
     
+}
+.loginbox{
+    backdrop-filter: blur(9px);
+}
+
+
+.loginheader{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("https://www.shutterstock.com/image-photo/assortment-take-out-delivery-foods-260nw-1774827845.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size:100% 110%;
+
+
 }

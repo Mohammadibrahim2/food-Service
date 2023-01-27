@@ -1,0 +1,24 @@
+
+
+.addserviceheader{
+    background: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,0.1)),url("https://i.ibb.co/CQj09JB/addservice.jpg") ;
+
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+
+
+}
+.leftsideservice{
+    background: url("https://i.ibb.co/zFpq5Dp/addchifimg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.frombox{
+
+    
+    backdrop-filter: blur(10px);
+}

@@ -1,0 +1,30 @@
+
+
+
+.blogBox{
+   
+    transition-duration:  1s ;
+    overflow: hidden;
+   
+}
+/* .frame{
+    border: 1px solid goldenrod;
+} */
+.imgBox{
+  
+    transform: rotate(0);
+    overflow: hidden;
+   
+
+   
+  
+}
+.imgBox img{
+    transition-duration:  1s ;
+}
+.imgBox:hover>img{
+   
+   
+    transform:  scale(1.4);
+   
+}

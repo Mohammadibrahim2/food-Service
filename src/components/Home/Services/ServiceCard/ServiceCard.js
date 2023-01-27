@@ -1,28 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { BsFillCartCheckFill} from 'react-icons/bs';
 
 
 
 const ServiceCard=({service})=>{
  
-    const{name,img,rating,price,description,_id}=service
-    console.log(_id)
+    const{name,img,rating,price,text,_id}=service
 
+const handleOrder=(_id)=>{
+  console.log("order hoce",_id)
+}
 
     return(
-    <div className=" grid grid-cols-3">
- <div className="card w-96 glass bg-blue-200">
-  <figure><img src={img} alt="car!"/></figure>
-  <div className="card-body">
-    <h2 className="card-title">{name}</h2>
-    <h3>price : {price} </h3>
-    <p>
-        {description.slice(0,100)+'.....'}<Link to="">Read more</Link>
-    </p>
-    <h4>Ratings:{rating}</h4>
-    <div className="card-actions justify-end">
-    <Link to={`/services/${_id}`}><button className="btn btn-primary">View details</button></Link>
-    </div>
+    <div className=" mx-5 h-[420px]  rounded-lg  ">
+ <div className="w-full h-full bg-white text-black p-2 rounded-lg">
+<img src={img} alt="car!" className=" object-cover h-[210px] w-full rounded-lg"/>
+  <div className="details text-start text-black pl-2">
+    <h2 className="text-2xl  font-semibold my-2 ">{name}</h2>
+    <h2 className="text-[16px] mb-2 ">{text}</h2>
+    <h2 className="text-xl mb-2 font-semibold">Price :
+    <span className="text-yellow-400"> {price} Tk</span></h2>
+    <Link to={`/services/${_id}`} > <button onClick={()=>handleOrder(_id)} className="text-white py-2 px-3 rounded-xl flex flex-row items-center justify-center" style={{backgroundColor:"red"}}>
+     <span className="mr-2">Order Now</span><BsFillCartCheckFill/></button></Link>
+  
   </div>
 </div>
 

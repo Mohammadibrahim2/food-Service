@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import useTitle from "../../../Hooks/TittleHooks/useTitle";
+import SubHeader from "../../../Subheader/Subheader";
 import Allservicecard from "./ALLServiceCard/Allservicecard";
-
+import "./Service.css"
 
 
 const Services=()=>{
@@ -9,7 +10,7 @@ const Services=()=>{
   const [services,setServices]=useState([])
  
   useEffect(()=>{
-    fetch("https://server-pearl-chi.vercel.app/services")
+    fetch("https://food-service-server-rust.vercel.app/services")
     .then(res=>res.json())
     .then(data=>setServices(data))
 
@@ -17,11 +18,21 @@ const Services=()=>{
 
   },[])
   console.log(services)
-  
+
 
     return(
-        <div className=" grid grid-cols-1 lg:grid-cols-3 my-10">
+        <div className="w-full h-auto ">
+        
+ <SubHeader></SubHeader>
+
  
+ <div className="w-full mx-auto bg-zinc-900 p-5 ">
+ <h2 className="py-8 text-white text-4xl font-bold text-center">Just Choose From The Best</h2>
+
+ 
+ <div className="grid lg:grid-cols-3 md:grid-cols-2 lg:pl-10 md:pl-5  w-full   h-full lg:gap-4 gap-2 place-items-center " >
+
+
       
       {
          services.map(allserveces=><Allservicecard
@@ -32,8 +43,9 @@ const Services=()=>{
         }
        
       
-        
-     
+ 
+       </div>
+       </div>
         </div>
 
     )
